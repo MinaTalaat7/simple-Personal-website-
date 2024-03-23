@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobbies-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hobby-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hobby-item:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <title>My Hobbies</title>
+</head>
+<body>
+
+<header>
+    <h1>My Hobbies</h1>
+</header>
+
+<main>
+    <div class="hobbies-container">
+        <div class="hobby-item">
+            <p> photography</p>
+            <img src="photography.jpg" alt="photography">
+        </div>
+        <div class="hobby-item">
+            <p> reading</p>
+            <img src="reading.jpg" alt="reading">
+        </div>
+        <div class="hobby-item">
+            <p> walking</p>
+            <img src="walking.jpg" alt="walking">
+        </div>
+        
+    </div>
+</main>
+
+</body>
+</html>

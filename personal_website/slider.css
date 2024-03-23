@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+   background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px; margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}

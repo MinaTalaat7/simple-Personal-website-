@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #birthdayImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        #messageTextarea {
+            width: 80%;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        #submitBtn {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Birthday Wishes</title>
+</head>
+<body>
+
+<header>
+    <h1>Happy Birthday</h1>
+</header>
+
+<main>
+    <div id="content">
+        <img id="birthdayImage" src="birthday.jpg" alt="Birthday Image">
+    </div>
+</main>
+
+<script>
+    // Wait for 5 seconds and then replace the image with a textarea
+    setTimeout(function() {
+        document.getElementById('content').innerHTML =
+            '<textarea id="messageTextarea" placeholder="Write a kind message..."></textarea>' +
+            '<button id="submitBtn" onclick="submitMessage()">Submit</button>';
+    }, 5000);
+
+    function submitMessage() {
+        var message = document.getElementById('messageTextarea').value;
+        if (message.trim() !== '') {
+           
+            window.location.href = 'thanks.html';
+        } else {
+            alert('Please enter a message before submitting.');
+        }
+    }
+</script>
+
+</body>
+</html>

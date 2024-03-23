@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="thanks.html" method="get" onsubmit="return validateForm()">
+    <fieldset>
+        <legend>User Registration</legend>
+      
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+<br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+<br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+<br>
+        <label for="repeatPassword">Repeat Password:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required>
+<br>
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate">
+<br>
+        <label for="userPicture">User Picture:</label>
+        <input type="file" id="userPicture" name="userPicture">
+<br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </fieldset>
+
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty">
+            <option value="engineering">Engineering</option>
+            <option value="science">Science</option>
+            <option value="business">Business</option>
+        </select>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <label><input type="checkbox" name="interests" value="programming"> Programming</label>
+            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+            <label><input type="checkbox" name="interests" value="swimming"> Swimming</label>
+        </fieldset>
+
+        <label for="aboutYou">About You:</label>
+        <textarea id="aboutYou" name="aboutYou"></textarea>
+
+        <label><input type="checkbox" id="termsCheckbox" required> I agree to the <a href="TermsAndConditions.htm" target="_blank">terms and conditions</a></label>
+    </fieldset>
+
+    <input type="submit" value="Submit" accesskey="s">
+    <input type="reset" value="Reset" accesskey="r">
+</form>
+
+<script>
+    function validateForm() {
+        // You can add client-side validation here if needed
+        return true;
+    }
+</script>
+<br> 
+               <a href="https://www.facebook.com/mina.talaat.7543/" target="_blank"> 
+                  <img src="facebook.jpg" alt="facebook"style="max-width: 100 px; height: 100px;"></a>
+               <a href="https://www.twitter.com/yourhandle" target="_blank"><img src="twitter.jpg" alt="facebook"style="max-width: 100 px; height: 100px;"></a>
+               
+</body>
+</html>
